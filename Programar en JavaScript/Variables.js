@@ -1,5 +1,7 @@
-var persona = 'Santiago';  //Declaramos la variable persona
+var persona = 'Santiago';  //Declaramos la variable persona, VAR para variables globales
 console.log(persona);
+
+let carro = "Mercedes Benz AMG G63"; //Declaramos variable local o por bloque
 
 console.log("Hola",persona);//Concatenacion con ,
 
