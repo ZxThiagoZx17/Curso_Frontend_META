@@ -1,0 +1,37 @@
+<html>: Es el elemento raíz de un documento HTML. Todos los demás elementos se anidan dentro de esta etiqueta.
+
+<head>: Contiene metainformación sobre el documento, como el título de la página, enlaces a hojas de estilo CSS y otros metadatos.
+
+<title>: Establece el título de la página web, que aparece en la barra de título o pestaña del navegador.
+
+<body>: Encierra el contenido visible de la página web, incluyendo texto, imágenes, multimedia y otros elementos.
+
+<h1>, <h2>, <h3>, <h4>, <h5>, <h6>: Formatee encabezados de distintos niveles, desde el más importante <h1> hasta el menos importante <h6>. Utilice estas etiquetas para estructurar el contenido de forma jerárquica.
+
+<p>: Representa un párrafo de texto y crea divisiones claras entre bloques de contenido.
+
+<a>: Crea hipervínculos a otras páginas web, archivos o secciones específicas dentro de la misma página.
+
+<img>: Incrusta una imagen en la página web y permite incluir elementos visuales.
+
+<ul> y <ol>: Crean listas desordenadas y ordenadas, respectivamente. Los elementos de la lista se representan mediante etiquetas <li>.
+
+<div>: Es un contenedor genérico que se utiliza para agrupar y estilizar bloques de contenido.
+
+<span>: Similar a <div>, pero se utiliza para estilizar en línea y agrupar elementos de texto.
+
+<br>: Inserta un salto de línea, haciendo que el texto pase a la línea siguiente sin crear un nuevo párrafo.
+
+<form>: Define un formulario que recoge las entradas del usuario. Puede contener varios elementos de formulario, como entradas de texto, casillas de verificación, botones de opción y botones.
+
+<input>: Crea un campo de entrada dentro de un formulario, permitiendo a los usuarios introducir datos.
+
+<textarea>: Crea un área de entrada de texto de varias líneas dentro de un formulario.
+
+<botón>: Genera un botón en el que se puede hacer clic, utilizado a menudo para enviar formularios o iniciar acciones.
+
+<label>: Asocia una etiqueta de texto a un elemento del formulario, lo que lo hace más accesible y fácil de usar.
+
+<table>: Define una tabla de datos. Contiene filas (<tr>), encabezados de tabla (<th>) y celdas de datos de tabla (<td>).
+
+<iframe>: Incrusta otra página web o contenido externo dentro de la página actual.
