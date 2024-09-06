@@ -1,0 +1,58 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Video Rating</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>My Video Rating</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Step 1: Video element with controls -->
+  <video width="320" height="240" controls>
+    <!-- Step 3: Source element -->
+    <source src="video.mp4" type="video/mp4">
+    <!-- Mensaje si el navegador no soporta videos -->
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Step 5: Form element -->
+  <form action="#" method="POST">
+    <!-- Step 6: Div for rating field -->
+    <div>
+      <!-- Step 7: Label for rating -->
+      <label for="rating">Rate this video:</label>
+      <!-- Step 8: Input range element -->
+      <input type="range" id="rating" name="rating" min="1" max="5" list="ratings" required>
+
+      <!-- Step 12: Datalist with options -->
+      <datalist id="ratings">
+        <!-- Step 14-18: Option elements -->
+        <option value="1" label="1"></option>
+        <option value="2"></option>
+        <option value="3"></option>
+        <option value="4"></option>
+        <option value="5" label="5"></option>
+      </datalist>
+    </div>
+
+    <!-- Step 19: Submit button -->
+    <button type="submit">Submit Rating</button>
+  </form>
+
+</body>
+
+</html>
