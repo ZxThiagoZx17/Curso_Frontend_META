@@ -1,0 +1,132 @@
+:root {
+    --fontMontserrat: "Montserrat", sans-serif;
+    --fontMarkazi: "Markazi Text", serif;
+
+    --DrabDarkBrown: #524632;
+    --Chamoisee: #8f7e4f;
+    --Sage: #c3c49e;
+    --Nyanza: #d8ffdd;
+    --TimberWolf: #dedbd8;
+}
+
+body {
+    background-color: var(--TimberWolf);
+    font-family: var(--fontMontserrat);
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: var(--fontMarkazi);
+}
+
+h2 {
+    font-size: 3rem;
+    font-family: var(--fontMarkazi);
+}
+
+header > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    background-color: var(--Sage);
+    margin-top: 2rem;
+    border-radius: 15px;
+}
+
+nav li {
+    display: inline-block;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+nav li a:hover {
+    border-bottom: 5px solid var(--Chamoisee);
+}
+
+section {
+    display: flex;
+}
+
+article {
+    flex: 1;
+    margin-top: 2rem;
+}
+
+.banner {
+    background-image: linear-gradient(
+            to top right,
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.1)
+        ),
+        url("../img/banner.jpg");
+    height: fit-content;
+    background-size: cover;
+    color: var(--Nyanza);
+    padding: 6rem;
+    border-radius: 15px;
+}
+
+.banner h1 {
+    margin-bottom: 2rem;
+    border-bottom: 5px solid;
+}
+.banner p {
+    line-height: 1.2;
+    font-size: 1.5rem;
+}
+
+.container_card {
+    gap: 2rem;
+}
+
+.card {
+    width: 190px;
+    height: fit-content;
+    padding: 2rem;
+    background: var(--Nyanza);
+    border-radius: 15px;
+}
+
+.card:hover{
+    transform: scale(1.02);
+    transition: 0.5s;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.card h2 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 5px solid var(--Sage);
+    font-weight: bold;
+}
+.card p{
+    line-height: 1.2;
+    
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+    border-top: 5px solid var(--Sage);
+    border-bottom: 5px solid var(--Sage);
+    padding: 2rem;
+}
+footer div {
+    flex: 1;
+    
+}
