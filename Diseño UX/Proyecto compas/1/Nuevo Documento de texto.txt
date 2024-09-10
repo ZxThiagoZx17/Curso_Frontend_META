@@ -1,0 +1,1 @@
+El restaurante Little Lemon carece actualmente de una funcion de reserva de mesas en linea para su sitio web. Esto dificulta que los clientes aseguren una mesa de manera conveniente, especialmente deurante las horas pico. La falta de esta funcionalidad tambien limita la capacidad del restaurante para gestionar eficientemente las reservas y la ocupacion del restaurante. 
