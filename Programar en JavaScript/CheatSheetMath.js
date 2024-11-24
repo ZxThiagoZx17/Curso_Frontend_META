@@ -23,3 +23,4 @@ console.log(Math.sin(30))
 console.log(Math.cos(30)) //Metodos trigonometricos
 console.log(Math.tan(30))
 
+console.log(Math.random())//Genera un nuemero aletorio del 1 al 99
