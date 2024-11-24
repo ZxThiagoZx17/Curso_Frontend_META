@@ -1,3 +1,21 @@
+// Literal de objeto
+var literalObjeto ={
+    nombre: "Santiago",
+    apellido: "Sanabria",
+    }; // Se denomina asi cuando el objeto se crea con {}, se le llama literal de objeto 
+
+// Notacion de puntos 
+var literalPuntos = {};
+literalPuntos.nombre = "Santiago";
+literalPuntos.apellido = "Sanabria";
+
+// Notacion de corchetes
+literalObjeto["Profesion"] = "Desarrolador";
+literalPuntos["Profesion"] = "Desarrolador";
+
+console.log(literalObjeto); //Podemos ver que los 3 enfoques nos devuelven lo mismo, por lo tanto, podemos utilizar los 3
+console.log(literalPuntos);
+
 var assistantManager = {
     rangeTilesPerTurn: 3,
     socialSkills: 30,
@@ -77,7 +95,7 @@ console.log("Array 'numeros' después de unshift(0):", numeros, "\n");
 // 2. Objetos (Objects)
 console.log("---- 2. Objetos (Objects) ----\n");
 
-let persona = {
+let persona_2 = {
     nombre: "Juan",
     apellido: "Pérez",
     edad: 30,
@@ -88,5 +106,5 @@ let persona = {
 };
 
 // Acceso a valores de un objeto
-console.log("Nombre de la persona:", persona.nombre, "\n"); // Imprime: Juan
-console.log("Edad de la persona:", persona["edad"], "\n"); // Imprime
+console.log("Nombre de la persona:", persona_2.nombre, "\n"); // Imprime: Juan
+console.log("Edad de la persona:", persona_2["edad"], "\n"); // Imprime
