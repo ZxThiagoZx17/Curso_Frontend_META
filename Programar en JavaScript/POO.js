@@ -1,4 +1,12 @@
 // Principios de POO
+
+function Icecream(flavor) {
+    this.flavor = flavor;
+    this.meltIt = function() {
+        console.log(`The ${this.flavor} icecream has melted`);
+    }
+}
+
 // 1.herencia
 // 2.encapsulación
 // 3.abstracción 
