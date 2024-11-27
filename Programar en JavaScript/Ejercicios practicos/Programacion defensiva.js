@@ -6,14 +6,15 @@ function letterFinder(word, match) {
     if(condition1 && condition2){
         for(i = 0; i < word.length; i++) {
             if(word[i] == match) {
-                console.log('Found the', match, 'at', i)
+                return('Found the', match, 'at', i)
             } else {
-                console.log('---No match found at', i)
+                return('---No match found at', i)
             }
         }
     } else {
-        console.log("Please pass correct arguments to the function.")
+        return("Please pass correct arguments to the function.")
     }
 }
 
-letterFinder("JH", 1)
+a = letterFinder("JH", 1)
+console.log(a)
