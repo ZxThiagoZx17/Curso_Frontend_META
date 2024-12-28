@@ -137,3 +137,111 @@ x = Math.sqrt(16);
 console.log("Devuelve la raíz cuadrada de un número. ->", x);
 
 console.log("\n");
+
+// Métodos de Objetos
+console.log("4. Métodos de Objetos");
+
+const persona = { nombre: "Santiago", edad: 21, pais: "Colombia" };
+
+x = Object.keys(persona);
+console.log("Devuelve un array con las claves del objeto. ->", x);
+
+x = Object.values(persona);
+console.log("Devuelve un array con los valores del objeto. ->", x);
+
+x = Object.entries(persona);
+console.log("Devuelve un array con pares clave-valor. ->", x);
+
+const copia = Object.assign({}, persona, { profesion: "Ingeniero" });
+console.log("Crea una copia del objeto y permite agregar nuevas propiedades. ->", copia);
+
+x = Object.hasOwn(persona, "nombre");
+console.log("Verifica si el objeto tiene una clave específica. ->", x);
+
+const congelado = Object.freeze(persona);
+console.log("Congela el objeto, evitando modificaciones futuras. ->", congelado);
+
+const sellado = Object.seal({ ...persona });
+sellado.edad = 22; // Permitido porque está sellado
+console.log("Sella el objeto, permitiendo solo modificar propiedades existentes. ->", sellado);
+
+console.log("\n");
+
+// Métodos de Math
+console.log("5. Métodos de Math");
+
+x = Math.PI;
+console.log("Devuelve el valor de PI. ->", x);
+
+x = Math.E;
+console.log("Devuelve el valor de la constante e. ->", x);
+
+x = Math.abs(-15);
+console.log("Devuelve el valor absoluto de un número. ->", x);
+
+x = Math.ceil(4.2);
+console.log("Redondea hacia arriba. ->", x);
+
+x = Math.floor(4.8);
+console.log("Redondea hacia abajo. ->", x);
+
+x = Math.round(4.5);
+console.log("Redondea al entero más cercano. ->", x);
+
+x = Math.sqrt(49);
+console.log("Devuelve la raíz cuadrada de un número. ->", x);
+
+x = Math.pow(2, 3);
+console.log("Calcula la potencia de un número (2^3). ->", x);
+
+x = Math.random();
+console.log("Devuelve un número aleatorio entre 0 y 1. ->", x);
+
+x = Math.max(1, 2, 3, 4, 5);
+console.log("Devuelve el número máximo de una lista. ->", x);
+
+x = Math.min(1, 2, 3, 4, 5);
+console.log("Devuelve el número mínimo de una lista. ->", x);
+
+console.log("\n");
+
+// Métodos de Fechas
+console.log("6. Métodos de Fechas");
+
+const ahora = new Date();
+
+x = ahora.toString();
+console.log("Devuelve una representación de la fecha como string. ->", x);
+
+x = ahora.toISOString();
+console.log("Devuelve la fecha en formato ISO. ->", x);
+
+x = ahora.getFullYear();
+console.log("Devuelve el año de la fecha. ->", x);
+
+x = ahora.getMonth() + 1; // Los meses comienzan en 0
+console.log("Devuelve el mes de la fecha (1-12). ->", x);
+
+x = ahora.getDate();
+console.log("Devuelve el día del mes. ->", x);
+
+x = ahora.getDay();
+console.log("Devuelve el día de la semana (0-6). ->", x);
+
+x = ahora.getHours();
+console.log("Devuelve la hora de la fecha. ->", x);
+
+x = ahora.getMinutes();
+console.log("Devuelve los minutos de la fecha. ->", x);
+
+x = ahora.getSeconds();
+console.log("Devuelve los segundos de la fecha. ->", x);
+
+x = ahora.getTime();
+console.log("Devuelve la fecha en milisegundos desde 1970. ->", x);
+
+const nuevaFecha = new Date();
+nuevaFecha.setFullYear(2030);
+console.log("Permite modificar el año de la fecha. ->", nuevaFecha);
+
+console.log("\n");
