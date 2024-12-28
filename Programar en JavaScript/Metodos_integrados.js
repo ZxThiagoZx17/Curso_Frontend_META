@@ -46,6 +46,7 @@ x = cadena.toUpperCase()
 console.log(x)
 
 //.trim() / .trimStart() / .trimEnd() eliminan espacios
+console.log("\n");
 
 // Métodos de Arrays
 console.log("2. Métodos de Arrays");
@@ -100,5 +101,39 @@ console.log("Crea un nuevo array desde una porción del array original. ->", x);
 
 x = array.splice(2, 1, 99);
 console.log("Cambia el contenido del array eliminando/reemplazando elementos. ->", x, "Array:", array);
+
+console.log("\n");
+
+// Métodos de Números
+console.log("3. Métodos de Números");
+
+let numero = 123.456;
+
+x = numero.toFixed(2);
+console.log("Redondea el número con un número fijo de decimales. ->", x);
+
+x = numero.toExponential(1);
+console.log("Convierte el número a notación exponencial. ->", x);
+
+x = Number.isInteger(numero);
+console.log("Verifica si el número es un entero. ->", x);
+
+x = Number.isNaN(numero);
+console.log("Verifica si el valor no es un número. ->", x);
+
+x = Math.abs(-123);
+console.log("Devuelve el valor absoluto de un número. ->", x);
+
+x = Math.ceil(4.2);
+console.log("Redondea hacia arriba. ->", x);
+
+x = Math.floor(4.8);
+console.log("Redondea hacia abajo. ->", x);
+
+x = Math.random();
+console.log("Devuelve un número aleatorio entre 0 y 1. ->", x);
+
+x = Math.sqrt(16);
+console.log("Devuelve la raíz cuadrada de un número. ->", x);
 
 console.log("\n");
