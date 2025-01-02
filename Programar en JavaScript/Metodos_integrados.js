@@ -56,6 +56,7 @@ console.log("2. Métodos de Arrays");
 
 let array = [1, 2, 3, 4, 5];
 let array_2 = [6, 7, 8, 9, 10];
+let array_3 = ["Honda", "Bmw", "Kawasaki", "Yamaha", "Suzuki"];
 
 x = array.concat(array_2);
 console.log("Combina dos o más arrays. ->", x);
@@ -77,6 +78,13 @@ console.log("Devuelve el índice del primer elemento que cumple una condición. 
 
 x = array.map(num => num * 2);
 console.log("Crea un nuevo array aplicando una función a cada elemento. ->", x);
+
+function listarItems(obj, ind, listaCompleta) {
+    console.log(`${ind}. ${obj}`); //Importante la tilde
+    console.log(`La lista completa es: ${listaCompleta}`)
+}
+
+console.log(array_3.forEach(listarItems));
 
 x = array.reduce((acumulador, actual) => acumulador + actual, 0);
 console.log("Reduce el array a un único valor aplicando una función acumulativa. ->", x);
