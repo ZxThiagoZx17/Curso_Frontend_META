@@ -46,8 +46,11 @@ x = cadena.toUpperCase()
 console.log(x)
 
 //.trim() / .trimStart() / .trimEnd() eliminan espacios
-console.log("\n");
 
+x = cadena.endsWith("tiago")
+console.log("Devuelve falso/verdadero si la cadena finaliza en X string", x)
+
+console.log("\n");
 // Métodos de Arrays
 console.log("2. Métodos de Arrays");
 
