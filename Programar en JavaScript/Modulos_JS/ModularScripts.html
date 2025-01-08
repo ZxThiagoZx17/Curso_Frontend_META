@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scripts Modulares</title>
+</head>
+<body>
+    Los Scripts Modulares son importados de archivos JS
+    <script type="module">
+        import {SaludoFormal} from "./Saludo.js";
+        SaludoFormal('Santiago');
+    </script>
+    <script type="module">
+        import {SaludoNormal, SaludoFormal} from './Saludo.js';
+        import Saludo from './Saludo.js'
+        SaludoNormal('Daniel');
+        Saludo();
+    </script>
+</body>
+</html>
