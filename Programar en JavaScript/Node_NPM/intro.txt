@@ -1,0 +1,9 @@
+Version de NODE
+node --version
+
+Version de NPM
+npm --version  
+
+Para usar JS en nuestro PC localmente es necesario instalar NODE.JS
+---> https://nodejs.org/es
+
