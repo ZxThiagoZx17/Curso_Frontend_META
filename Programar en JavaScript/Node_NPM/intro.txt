@@ -7,3 +7,11 @@ npm --version
 Para usar JS en nuestro PC localmente es necesario instalar NODE.JS
 ---> https://nodejs.org/es
 
+Inicia proyecto 
+npm init 
+
+Bandera -y es (Si a todo)
+-y
+
+Ejemplo de instalar JEST, --save-dev indica se instalara como una dependencia de desarrollo en devDependencies de package.json
+npm install --save-dev jest
