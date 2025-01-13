@@ -1,7 +1,7 @@
 {
   "name": "pruebas",
   "version": "1.0.0",
-  "main": "JEST.js",
+  "main": "addFive .js",
   "scripts": {
     "test": "jest"
   },

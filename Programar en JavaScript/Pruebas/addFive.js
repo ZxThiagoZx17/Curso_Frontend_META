@@ -12,8 +12,8 @@
 
 // La simulacion o Moking es importante a la hora de hacer pruebas cuando se esta en un equipo de trabajo
 
-function AddFive(val) {
-    return val+5;
-}
-
+function addFive(val) {
+    return val + 5;
+};
+module.exports = addFive;
 // en Test de package.json Escribo "jest"

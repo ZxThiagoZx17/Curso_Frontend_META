@@ -1,1 +1,0 @@
-const AddFive = require('./JEST');
