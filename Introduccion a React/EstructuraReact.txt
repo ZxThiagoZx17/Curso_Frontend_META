@@ -1,0 +1,22 @@
+Cuando se crea un proyecto en React este nos crea varias carpetas:
+
+node_modules --> Modulos de nodo
+    En esta carpeta se guardan todos los paquetes de Node.js necesarios, es administrada por package.json, si se elimina puede regenerarse con el comando npm install (Se incluye en .gitignore para no agregarlo a repo) 
+
+public --------> Publica
+    Contiene todos los recursos que se mostraran al usuario en la app como imagenes, iconos, Html base (Archivos que no pasan por procesamiento con React) robots.txt (Utilizado para optimizacion en el motor de busqueda), manifest.json (Usado en PWA,Proporciona metadatos sobre la aplicación web, como su nombre, íconos, colores temáticos, y cómo debería comportarse cuando se instala en un dispositivo) y lo mas importante, nuestro index.html donde React inyecta todos los elementos creados en el <div id="root"> para que muestren en la WEB
+
+src -----------> Fuente
+    Contiene todos los archivos y carpetas escenciales para que la app funcione, tendremos app.css que tendra los estilos para los componentes en app.js, index.css que contiene los estilos usados en todo el proyecto, App.test.js, setupTests.js y reportWebVitals.js relacionados con rendiemiento y pruebas en la app, el mas importante aca sera index.js ya que es el que importa todo lo que la app necesita para funcionar, monta a React en el DOM 
+
+    La estructura recomendada para trabajar seria la siguiente:
+        components/: Componentes reutilizables como botones, formularios, etc.
+        pages/: Componentes de página o vistas principales.
+        utils/: Funciones auxiliares o lógica compartida.
+        styles/: Archivos CSS o SASS para estilos globales. 
+
+Raiz de la carpeta:
+    .gitignore: Se utiliza para especificar que archivos y carpetas deben excluirse en GitHub
+    README.md: Es un archivo MarkDowm que ofrece informacion basica del proyecto 
+    package.json: Ayuda a NPM a construir la aplicacion en otra maquina con la informacion de package-lock.json 
+    package-lock.json: Almacena requerimientos, versiones especificas y dependencias del proyecto
