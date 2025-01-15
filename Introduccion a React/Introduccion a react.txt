@@ -1,0 +1,17 @@
+React es una biblioteca creada en JS para trabajo en frontent
+
+Este se basa en una arquitectura de componentes donde si se modifica uno, no tiene porque afectar al otro
+
+Esto nos trae ventajas en el trabajo en equipo ya que se se puede trabajar un componente sin interferir en otros
+
+React cuenta con un DOM virtual que lo que hace es guardar los cambios sin hacerlos directamente en el DOM Real los que hace basicamente es comparar su ultima version del DOM con la anterior con el fin de mirar que cambios hay y asi actualizar en el DOM real UNICAMENTE PARTES NECESARIAS, NO TODO EL DOM esto se conoce como "diffing"
+
+Hacer directamente operaciones en el DOM real tiene un gran costo en redimiento ya que el navegador necesita procesar el cambio y renderizar los resultados varias veces innecesariamente
+
+
+SPA (Single page application)
+Es un tipo de aplicacion WEB que se carga en una sola pagina HTML principal que se actualiza a medida que se navega
+
+Archivos HTML, CSS, JS, Imagenes, etc... se cargan al inicio, luego se haran peticiones a Backend (AJAX o APIs REST/GraphQL) 
+
+JS es el encargado de hacer las actualizaciones en el contenido actualizanco el DOM dinamicamente para reflejar cambios
