@@ -1,8 +1,11 @@
+// Modulo: Serie de componentes
+
 // Hay 2 maneras de exportar un modulo de JS, Mencionaremos:
 
 // Uso de exportaciones predeterminadas 
 // - Solo permite exportar una entidad por modulo
 // - Al importar se puede asignar el nombre que uno quiera
+// - Es recomendable hacerlo cuando la funcion tiene el mismo nombre del archivo JS
 
 // Uso de exportaciones con nombre 
 // - Permite exportar varias entidades por modulo
