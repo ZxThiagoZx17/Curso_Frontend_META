@@ -8,4 +8,9 @@ function Heading() {
   );
 }
 
+function App(){
+  return(
+    <Heading/>
+  );
+} 
 export default App;

@@ -26,4 +26,28 @@ export default App;
 
 //En HTML no se pueden declarar variables, pero gracias a JSX podemos manejarlo asi mediante un proceso llamado "Transpilar" que es un proceso que hace compatibles JSX y HTML en este caso particular, esto pasa tambien con versiones de JS viejas y JS ES6
 
+// Para que el navegador entienda JSX debe hacer un paso en la transpilacion, un ejemplo de trasnpilacion de JSX a JS:
 
+// Codigo JSX:
+function Heading(props) {
+    return(<h1>{props.title}</h1>);
+        }
+
+// Codigo JS:
+"use strict";
+
+function Heading(props) {
+    return /*#__PURE__*/React.createElement("h1", null, props.title);
+}
+
+//Se puede observar que lo que se hace es modificar el DOM para la creacion de un elemento H1 en este caso con Null porque no se ha agregado un valor, asi se veria cuando se agrega un valor:
+
+<Heading title="This is the heading text!"></Heading>
+
+//JS:
+"use strict";
+
+/*#__PURE__*/
+React.createElement(Heading, {
+  title: "This is the heading text!"
+});
