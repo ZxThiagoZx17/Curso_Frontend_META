@@ -1,0 +1,3 @@
+Crear App React ---------------> npm init react-app "NombreApp"
+Iniciar proyecto React --------> npm start
+Crear compilacion produccion --> npm run build
