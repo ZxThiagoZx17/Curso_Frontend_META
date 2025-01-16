@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import Bolsa from './components/Bolsa'
+import { Peras, Manzanas } from './components/Frutas';
 
 function Heading() {
   let titulo = 'Ejemplo de creacion de un componente!!'
@@ -10,7 +12,15 @@ function Heading() {
 
 function App(){
   return(
-    <Heading/>
+    <div>
+      <Bolsa> 
+          <Manzanas color="Rojas" number="5"/>
+      </Bolsa>
+
+      <Bolsa>
+        <Peras friend={<h3>Santiago</h3>}/>
+      </Bolsa>
+    </div>
   );
 } 
 export default App;
