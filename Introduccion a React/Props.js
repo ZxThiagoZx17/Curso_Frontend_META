@@ -87,4 +87,4 @@ function App(){
         </Bolsa>
       </div>
     );
-  } 
+} 
