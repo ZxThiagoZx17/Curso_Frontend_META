@@ -1,6 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
 import Boton, {Mouse} from './compenentes/Boton';
+import Controladordarkmode from './compenentes/Modo oscuro/Controladordarkmode';
 
 function App() {
   return (
@@ -8,6 +8,8 @@ function App() {
       <Boton/>
       <hr/>
       <Mouse/>
+      <hr/>
+      <Controladordarkmode/>
     </div>
   );
 }
