@@ -2,6 +2,7 @@ import './App.css';
 import Boton, {Mouse} from './compenentes/Boton';
 import Controladordarkmode from './compenentes/Modo oscuro/Controladordarkmode';
 import NumAleatorio from './compenentes/Numero Aleatorio/NumAleatorio';
+import Promo from './compenentes/Promocion/Promo';
 
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
       <Controladordarkmode/>
       <hr/>
       <NumAleatorio/>
+      <hr/>
+      <Promo  />
     </div>
   );
 }
