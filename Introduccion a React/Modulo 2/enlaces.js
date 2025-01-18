@@ -15,6 +15,8 @@ const [state, setState] = useState(inicialEstado) //Declaramos una variable de e
 // var state = inicialEstado[0];
 // var setState = inicialEstado[1];
 
+// Los enlaces solo se pueden invocar en el nivel superior de los componentes, desde funciones, no se pueden invocar en bucles o condicionales
+
 // Se mostrara un ejemplo del uso de Hooks o enlaces:
 
 import React, {useState} from "react"
@@ -61,3 +63,6 @@ export default function InputComponent() {
     </> 
   ); 
 } 
+
+// Hay mas enlaces interesantes como useContext, useNote, useRef, etc. 
+// Se hizo un ejemplo de useRef, lo que hace es dar como un identificador a un objeto, en este caso Input, asocia una referencia

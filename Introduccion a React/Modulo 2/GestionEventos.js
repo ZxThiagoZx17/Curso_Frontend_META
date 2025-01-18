@@ -54,3 +54,18 @@ function app() {
 
 // Esos son las declaraciones/expresiones de funciones mas usadas para controlar eventos en React
 
+// NOTA IMPORTANTE: TODOS LOS EVENTOS DEVUELVEN UN OBJETO QUE CONTIENE VALORES IMPORTANTES (SyntheticEvent), PODEMOS MIRARLO A TRAVES DE LA FUNCION QUE LOS MANEJA:
+
+const incrementarContador = (expresionEvento) => {
+    setContador(contador+8);
+    console.log(expresionEvento);
+}
+
+<div>
+<button onClick={incrementarContador}> {/*ejemplo*/}
+    Haz click para incrementar!!!    
+</button>
+<h1>
+    Contador: {contador}
+</h1>
+</div>

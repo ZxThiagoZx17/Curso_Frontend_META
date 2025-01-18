@@ -3,7 +3,10 @@ import React, {useState} from "react"
 export default function Contador() {
     const [contador, setContador] = useState(7);
 
-    const incrementarContador = () => setContador(contador+8);
+    const incrementarContador = (expresionEvento) => {
+        setContador(contador+8);
+        console.log(expresionEvento);
+    }
 
     return(
         <div>

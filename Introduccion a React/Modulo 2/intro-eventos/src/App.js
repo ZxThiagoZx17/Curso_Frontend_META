@@ -1,5 +1,6 @@
 import './App.css';
 import Boton, {Mouse} from './compenentes/Boton';
+import EntradaTextoConBotonEnfoque from './compenentes/Contador/BotonEnfoque';
 import Contador from './compenentes/Contador/Contador';
 import InputComponent from './compenentes/Contador/SeguimientoStrings';
 import Controladordarkmode from './compenentes/Modo oscuro/Controladordarkmode';
@@ -20,7 +21,10 @@ function App() {
       <Promo  />
       <hr/>
       <Contador/>
+      <hr/>
       <InputComponent/>
+      <hr/>
+      <EntradaTextoConBotonEnfoque/>
     </div>
   );
 }
