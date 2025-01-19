@@ -6,6 +6,7 @@ import InputComponent from './compenentes/Contador/SeguimientoStrings';
 import Controladordarkmode from './compenentes/Modo oscuro/Controladordarkmode';
 import NumAleatorio from './compenentes/Numero Aleatorio/NumAleatorio';
 import Promo from './compenentes/Promocion/Promo';
+import Wallet from './compenentes/Wallet/Wallet';
 
 function App() {
   return (
@@ -25,6 +26,8 @@ function App() {
       <InputComponent/>
       <hr/>
       <EntradaTextoConBotonEnfoque/>
+      <hr/>
+      <Wallet/>
     </div>
   );
 }

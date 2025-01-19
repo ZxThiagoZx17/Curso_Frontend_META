@@ -1,7 +1,7 @@
 import { useRef } from "react";
 
 export default function EntradaTextoConBotonEnfoque () {
-    const entradaEl = useRef(2);
+    const entradaEl = useRef(null);
     const botonPulsado = () =>{
         // `current` apunta al elemento de entrada de texto montado
         entradaEl.current.focus();
