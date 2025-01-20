@@ -6,6 +6,11 @@
 
 // Cuando se crea un componente se obtiene un estado inicial, hay componente de aplicacion que NO TIENEN ESTADO, por el otro lado estan los componenetes que codifican y trabajan con variables de estado
 
+// Para definir si se debe no usar estado simplemente tiene que funcionar bien sin tener su estado propio
+// Cuando es indispensable el estado en el componente se debe incluir
+
+// Hay casos en los que es mejor pasar el estado de padre a hijo mediante accesorios
+
 // Aqui viene el tema de hooks que ya lo explicamos dando un ejemplo con useState y useRef
 
 // A medida de que la complejidad de la aplicacion aumenta, tambien se aumenta la complejidad del estado que se administra a traves de componentes
