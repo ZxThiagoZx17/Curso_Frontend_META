@@ -7,7 +7,11 @@ import Reactplayer from "react-player/youtube";
 export const MostrarVideo = () => {
     return(
         <>
-            <Reactplayer url={'https://www.youtube.com/watch?v=v90yAgFsZBY'}/>
+            <Reactplayer
+             url={'https://www.youtube.com/watch?v=v90yAgFsZBY'}
+             playing={true}
+             volume={0.5}
+             />
         </>
     );
 };
