@@ -118,4 +118,3 @@ export default function Wallet() {
 };
 
 // En casos demasiado complejos lo mejor es hacerlo mediante librerias dedicadas a la administracion de componentes
-
