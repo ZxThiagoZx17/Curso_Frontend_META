@@ -39,3 +39,41 @@ console.log(transformarPostres)
 // ]
 
 // Nos arrojaria el resultado que queremos mediante informacion externa de una API u otra fuente
+
+// Aca la transformamos en una coleccion de componentes que arrojan elementos de una lista desordenada usando JSX
+export default function TransformacionListas() {
+
+    const arreglarPostres = desserts.map(postres => {
+        const listaElementos =`${postres.name} tiene ${postres.calories} calorias.`;
+        return(
+            <li>{listaElementos}</li>
+        );
+    })
+
+    return(
+        <>
+            <ul>
+                {arreglarPostres}
+            </ul>
+        </>
+    );
+}
+
+// Se ve en uso en la app datos-externos, tambien se vera un uso donde se hace practica de funciones de Filtrado, clasificacion y mapeo (filter(), sort(), map()), ejemplos:
+
+// Filter(): Se ve una funcion que filtra los elementos con menos de 500 calorias unicamente:
+const bajasCalorias = props.data.filter((desserts) =>{
+    return(desserts.calories < 500);
+// sort(): Se ordenan los elementos segun las calorias de menor a mayor
+}).sort((a, b) => {a.calories-b.calories
+// map(): Se muestra la informacion como se solicita, en listas desordenadas
+}).map((postre)=>{
+    return(
+        <>
+            <ul>
+                {`${postre.name} - ${postre.calories} cal`}
+            </ul>
+        </>
+    )})
+
+
