@@ -5,6 +5,8 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ThemeProvider } from './componentes/ThemeContext';
 
+// Como el tema es algo que se aplica a absolutamente todo sitio web, agregamos el Provider en index.js que es donde tenemos la raiz (root) de todo el sitio, asi evitamos errores al intentar traer valores del contexto en componentes padres
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

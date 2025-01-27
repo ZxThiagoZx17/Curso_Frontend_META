@@ -97,3 +97,4 @@ const App = () => {
 
 // En la incrustacion de {children} entre los <ContadorContext.Provider> se supone que devuelve el componente hijo pero no se como se hace el enlace de children y el componente hijo
 
+// Se da un ejemplo mas complejo en donde se implementa tema oscuro/claro mediante uso de estados, ya esta implementado, se documenta en los archivos donde se implemento

@@ -1,6 +1,8 @@
 import { useTheme } from "../componentes/ThemeContext";
 import Switch from ".";
 
+// En este archivo tenemos varios componentes secundarios que nos ayudaran a renderizar la el interruptor y el contenido textual para nuestra aplicacion, de aqui se exportan Page y Header que son los que renderizaran en app.js todo lo relacionaco con el tema
+
 const Title = ({ children }) => {
   const { theme } = useTheme();
   return (
