@@ -1,19 +1,18 @@
-import './Styles.css';
-import { UsarTema } from '../componentes/ThemeContext';
+import "./Styles.css";
+import { useTheme } from "../componentes/ThemeContext";
 
-const Cambiar = () => {
-    const[tema, cambiarTema] = UsarTema();
-
-    return(
-        <label className='switch'>
-            <input
-            type='checkbox'
-            checked={tema === 'luz'}
-            onChange={cambiarTema}
-            />
-            <span className="slider round"/>
-        </label>
-    );
+const Switch = () => {
+ const { theme, toggleTheme } = useTheme();
+ return (
+   <label className="switch">
+     <input
+       type="checkbox"
+       checked={theme === "light"}
+       onChange={toggleTheme}
+     />
+     <span className="slider round" />
+   </label>
+ );
 };
 
-export default Cambiar;
+export default Switch;

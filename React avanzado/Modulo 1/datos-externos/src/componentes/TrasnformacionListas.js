@@ -1,3 +1,5 @@
+import { useTheme } from "./ThemeContext";
+
 const desserts = [
     {
       name: "Chocolate Cake",
@@ -23,6 +25,7 @@ const desserts = [
 
 export default function TransformacionListas() {
 
+    const {theme} = useTheme();
     const arreglarPostres = desserts.map(postres => {
         const listaElementos =`${postres.name} tiene ${postres.calories} calorias.`;
         return(
@@ -32,7 +35,7 @@ export default function TransformacionListas() {
 
     return(
         <>
-            <ul>
+            <ul style={{color: theme === "light" ? "black" : "white",}}>
                 {arreglarPostres}
             </ul>
         </>

@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import { useTheme } from './ThemeContext';
 
 // En este ejemplo vamos a demostrar como hacer el uso de keys en React, si simplemente no agregamos el atributo keys a nuestras listas de elementos, nos saldra un mensaje en la consola de JS en el navegador asi:
 
@@ -7,6 +8,8 @@ import {useState} from 'react';
 
 // Esto pasara siempre y cuando estemos en modo desarrollo, nos dice que cada elemento secundario de la lista debe tener una propiedad de "key" unica y nos pide comprobar el metodo o funcion que renderiza el componente
 export default function TareasPorHacer() {
+    const {theme} = useTheme();
+
     const [tareasPendientes, setTareasPendientes] = useState([{
         id:'1',
         horaCreacion:'18:00'
@@ -29,13 +32,13 @@ export default function TareasPorHacer() {
                             return(                            
                                 <tr key={index}>
                                     <td>
-                                        <label >{tarea.id}</label>
+                                        <label style={{color: theme === "light" ? "black" : "white",}} >{tarea.id}</label>
                                     </td>
                                     <td>
                                         <input placeholder={tarea.horaCreacion}/>
                                     </td>
                                     <td>
-                                        <label>{tarea.horaCreacion}</label>
+                                        <label style={{color: theme === "light" ? "black" : "white",}} >{tarea.horaCreacion}</label>
                                     </td>
                                 </tr>
                             );

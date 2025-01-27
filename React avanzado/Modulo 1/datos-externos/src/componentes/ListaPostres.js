@@ -1,3 +1,5 @@
+import { useTheme } from "./ThemeContext";
+
 const desserts = [
     {
       name: "Chocolate Cake",
@@ -23,6 +25,8 @@ const desserts = [
 
 export default function ListaPostres() {
 
+    const {theme} = useTheme();
+
     const bajasCalorias = desserts.filter((postres) =>{
         return(postres.calories < 500);
 
@@ -31,7 +35,7 @@ export default function ListaPostres() {
     }).map((postres)=>{
         return(
             <>
-                <ul>
+                <ul style={{color: theme === "light" ? "black" : "white",}}>
                     {`${postres.name} - ${postres.calories} cal`}
                 </ul>
             </>
