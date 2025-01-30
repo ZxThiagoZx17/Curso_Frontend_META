@@ -40,4 +40,12 @@ export default function TarjetaRegalo() {
     );
 };
 
+// El operador && devuelve el segundo valor si el primero es verdadero
+// Si el primer valor es falso, devuelve ese mismo valor y no evalua lo que sigue
 
+// giftCard.valid && (
+//     <button onClick={spendGiftCard}>
+//       Spend Gift Card
+//     </button>
+
+// En este caso, si fuera valido, se devuelve el button, de lo contrario simplemente no se renderizaria nada
