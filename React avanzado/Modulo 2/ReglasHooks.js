@@ -62,14 +62,13 @@ fetch("https://jsonplaceholder.typicode.com/users/1")
 
 // async/await:
 async function obtenerDatos() {
-    try {
-      const response = await fetch("https://jsonplaceholder.typicode.com/users/1");
-      const data = await response.json();
-      console.log("Datos:", data);
-    } catch (error) {
-      console.error("Error:", error);
-    }
+  try {
+    const response = await fetch("https://jsonplaceholder.typicode.com/users/1");
+    const data = await response.json();
+    console.log("Datos:", data);
+  } catch (error) {
+    console.error("Error:", error);
   }
-  
-  obtenerDatos();
-  
+}
+
+obtenerDatos();
