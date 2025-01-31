@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 
 export default function CriptoDatos() {
+
+    // En casos donde necesitemos testear nuestras API's en conexiones lentas podemos hacerlo en la seccion de red en el navegador
     const [dataCripto, setDataCripto] = useState(null);
     const [error, setError] = useState(false); // Nuevo estado para manejar errores
     useEffect(() => {

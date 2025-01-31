@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 
 export default function CriptoDatos() {
     const [dataCripto, setDataCripto] = useState(null);
+    const [error, setError] = useState(false); // Nuevo estado para manejar errores
     useEffect(() => {
         fetch('https://api.coindesk.com/v1/bpi/currentprice.json')
             .then((respuestaWeb) => respuestaWeb.json())    //respuestaWeb es el elemento que devuelve fetch
@@ -18,7 +19,10 @@ export default function CriptoDatos() {
             //     json: function() {...}
             //   }
 
-            .then((jsonData) => setDataCripto(jsonData.bpi.USD))
+            .then((jsonData) => {
+                setDataCripto(jsonData.bpi.USD)
+                console.log("Datos cargados:", jsonData.bpi.USD);
+            })
             // jsonData es lo que devuelve respuestaWeb.json() que vendria a ser el archivo json con toda la informacion
             // seria esto:
             // {
@@ -29,18 +33,28 @@ export default function CriptoDatos() {
             //       "EUR": { ... }
             //     }
             //   }
-            
-            // la primera promesa toma lo que devuelve fetch, la segunda lo que devuelve la primera promesa, la tercera toma lo que devuelve la segunda y asi susesivamente
 
-            .catch((error) => console.log(`Error: ${error}`))
+            .catch((error) => {
+                console.log(`Error: ${error}`)
+                setError(true); // Activa el estado de error
+            })
     },[])
 
-    return(
+    return error ? (  //Render en caso de salir algun error, se activa modificando el link de la API
+        <div>
+            <h1>❌ Error al obtener los datos</h1>
+            <p>Verifica tu conexión o intenta nuevamente.</p>
+        </div>
+    ) : dataCripto ? (
         <div>
             <h1>Balance de divisas {dataCripto.code}</h1>
             <p>{dataCripto.description}</p>
             <h2>Simbolo: {dataCripto.symbol}</h2>
             <p>Calificacion: {dataCripto.rate}</p>
+        </div>
+    ) : ( //Este es un render alternativo en caso de que dataCripto no tenga datos
+        <div>
+            <h1>Esperando datos.........</h1>
         </div>
     );    
 };
@@ -55,4 +69,7 @@ return algunaVariableEstado.length > 0 ? (
     <h1>Esperando datos...</h1> 
   );    
 
-// IMPORTANTE: los objetos no tienen .length
+// IMPORTANTE: los objetos no tienen .length, PERO sus keys si, asi Object.keys(objetoCualquiera).length > 0
+// Es importante en algunos casos inicializar el objeto en useState({}) para evitar errores como "Cannot read properties of undefined" 
+
+// En casos donde necesitemos testear nuestras API's en conexiones lentas podemos hacerlo en la seccion de red en el navegador
