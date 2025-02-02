@@ -1,5 +1,6 @@
 import './App.css';
 import CriptoDatos from './componentes/CriptoDatos';
+import IncrementaUno from './componentes/IncrementaUno';
 import TarjetaRegalo from './componentes/TarjetaRegalo';
 import UsuarioRandom from './componentes/UsuarioRandom';
 
@@ -11,6 +12,8 @@ function App() {
       <CriptoDatos/>
       <hr/>
       <UsuarioRandom/>
+      <hr/>
+      <IncrementaUno/>
     </div>
   );
 }
