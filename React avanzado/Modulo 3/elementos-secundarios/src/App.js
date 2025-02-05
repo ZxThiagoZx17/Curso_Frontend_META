@@ -1,8 +1,13 @@
+import { useState } from 'react';
 import './App.css';
+import { GrupoRadio, RadioGrupo } from './ManipulacionDinamica/ComoNosConoces';
 import {ContadorHijos, Lista, RevisarHijos, UnicoHijo} from './ManipulacionDinamica/objetoChildren'
 import { BotonGrande, Contenedor, Tarjeta } from './ManipulacionDinamica/objetoCloneElement';
 
 function App() {
+
+  const [selected, setSelected] = useState("");
+
   return (
     <div className="App">
 
@@ -46,6 +51,15 @@ function App() {
           </div>
         </Contenedor>
         <hr/>
+        
+        <h2>Como conociste nuestro restaurante??</h2>
+        <GrupoRadio onChange={setSelected} selected={selected}>
+          <RadioGrupo value="social_media">Social Media</RadioGrupo>
+          <RadioGrupo value="friends">Friends</RadioGrupo>
+          <RadioGrupo value="advertising">Advertising</RadioGrupo>
+          <RadioGrupo value="other">Other</RadioGrupo>
+        </GrupoRadio>
+        <button disabled={!selected}>Submit</button>
     </div>
   );
 }

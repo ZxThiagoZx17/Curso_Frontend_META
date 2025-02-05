@@ -3,6 +3,7 @@ import React from 'react';
   // React.cloneElement(elemento, [propsAmodificar]
   // elemento: Elemento a clonar
   // propsAmodificar: Indicaciones que se agregaran y se fusionaran con el elemento clonado 
+  
 // 1. Clonar y modificar props: Clona el <h2> dentro de Tarjeta y le cambia el color a rojo.
 export function Tarjeta({ children }) {
     return React.cloneElement(children, { style: { color: "red" } });
