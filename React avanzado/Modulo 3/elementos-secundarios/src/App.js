@@ -3,6 +3,7 @@ import './App.css';
 import { GrupoRadio, RadioGrupo } from './ManipulacionDinamica/ComoNosConoces';
 import {ContadorHijos, Lista, RevisarHijos, UnicoHijo} from './ManipulacionDinamica/objetoChildren'
 import { BotonGrande, Contenedor, Tarjeta } from './ManipulacionDinamica/objetoCloneElement';
+import { Boton, BotonLoging } from './components/Spread';
 
 function App() {
 
@@ -54,12 +55,22 @@ function App() {
         
         <h2>Como conociste nuestro restaurante??</h2>
         <GrupoRadio onChange={setSelected} selected={selected}>
-          <RadioGrupo value="social_media">Social Media</RadioGrupo>
+          <RadioGrupo value="social_media"> Media</RadioGrupo>
           <RadioGrupo value="friends">Friends</RadioGrupo>
           <RadioGrupo value="advertising">Advertising</RadioGrupo>
           <RadioGrupo value="other">Other</RadioGrupo>
         </GrupoRadio>
         <button disabled={!selected}>Submit</button>
+       <hr/>
+
+        <h2>Inicio de sesion</h2>
+       <Boton type="primary" onClick={() => alert("Registrate bro")}>
+          Registrate
+       </Boton> 
+
+       <BotonLoging type="secondary" onClick={() => alert("Registrate")}>
+          Iniciar sesion
+       </BotonLoging>
     </div>
   );
 }
