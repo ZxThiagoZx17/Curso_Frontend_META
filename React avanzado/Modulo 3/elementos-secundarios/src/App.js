@@ -4,6 +4,7 @@ import { GrupoRadio, RadioGrupo } from './ManipulacionDinamica/ComoNosConoces';
 import {ContadorHijos, Lista, RevisarHijos, UnicoHijo} from './ManipulacionDinamica/objetoChildren'
 import { BotonGrande, Contenedor, Tarjeta } from './ManipulacionDinamica/objetoCloneElement';
 import { Boton, BotonLoging } from './components/Spread';
+import { RedCard, BlueCard } from './components/Hoc';
 
 function App() {
 
@@ -71,6 +72,17 @@ function App() {
        <BotonLoging type="secondary" onClick={() => alert("Registrate")}>
           Iniciar sesion
        </BotonLoging>
+       <hr/>
+
+      <div>
+        <RedCard>
+          Carta roja
+        </RedCard>
+        <BlueCard>
+          Carta Azul
+        </BlueCard>
+      </div>
+
     </div>
   );
 }
