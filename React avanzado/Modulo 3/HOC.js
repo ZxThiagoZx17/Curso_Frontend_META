@@ -3,6 +3,22 @@
 
 // Es un patron avanzado que permite reutilizar logica entre componentes para no repetir codigo innecesariamente:
 
+// Pasos paa crear un HOC
+// Definir el HOC:
+
+// Se crea una función que recibe un componente como argumento.
+// Dentro del HOC se pueden definir estados, efectos u otra lógica que queramos compartir entre múltiples componentes.
+// El HOC devuelve el componente recibido con las nuevas props añadidas, que pueden incluir estados, datos simulados, funciones, etc.
+// Crear los componentes que usen el HOC:
+
+// Se crean los componentes que recibirán la funcionalidad extra que provee el HOC.
+// Estos componentes accederán a los valores adicionales a través de props.
+// Se puede usar desestructuración de props para facilitar el acceso a los datos.
+// Usar el HOC para extender funcionalidad:
+
+// Se crean versiones mejoradas de los componentes envolviéndolos con el HOC.
+// Se exportan o se utilizan en la aplicación con las nuevas funcionalidades añadidas.
+
 // Este es el componente de orden superior
 const conDatosUsuario = (funcionEnvueta) => {
     return(props) => {

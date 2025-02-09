@@ -5,7 +5,8 @@ import {ContadorHijos, Lista, RevisarHijos, UnicoHijo} from './ManipulacionDinam
 import { BotonGrande, Contenedor, Tarjeta } from './ManipulacionDinamica/objetoCloneElement';
 import { Boton, BotonLoging } from './components/Spread';
 import { RedCard, BlueCard } from './components/Hoc';
-import { RastreadorPanelMouse, RastreadorPuntoMouse } from './rastreadorMouse/MouseCoordenadas';
+import { RastreadorPanelMouse, RastreadorPuntoMouse } from './rastreadorMouse/MouseCoordenadasHoc';
+import { PanelCoordenadas, PuntoCoordenadas } from './rastreadorMouse/MouseCoordenadasRender';
 
 function App() {
 
@@ -89,6 +90,11 @@ function App() {
         <h1>Rastreo mouse</h1>
         <RastreadorPanelMouse/>
         <RastreadorPuntoMouse/>
+      </>
+
+      <>
+        <PanelCoordenadas/>
+        <PuntoCoordenadas/>
       </>
     </div>
   );
