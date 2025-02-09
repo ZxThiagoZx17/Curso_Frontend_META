@@ -39,6 +39,7 @@ function app() {
 // 1. Puede llegar a ser dificil de leer si se encadenan demasiados HOC
 // 2. Asegurar de que se pasen todas la props con {...props} y ya los componentes de entrada utilizan unicamente los valores necesarios
 // 3. Nunca mutar/cambiar un componente dentro de un HOC
+// 4. No crear los HOC o funciones mejoradas dentro de un componente ya que se montara de nuevo, no se actualizara con las props adicionales
 // 4. Los HOC afectan el depurado debido a que los nombres de los componentes se codifican, se puede solucionar con displayName:
 
 const withUserData = (WrappedComponent) => {
@@ -106,3 +107,10 @@ export default function App() {
     </div>
   );
 }
+
+// Hay una libreria que se especializa en HOC con 'currying' llamada React Redux, su sintaxis es asi:
+const connectWithStore = connect(selector, actions); //connect devuelve una nueva funcion (Un HOC)
+const EnhancedComponent = connectWithStore(WrappedComponent); //Aplica la funcion al componente envuelto y devuelve una funcion mejorada (EnhancedComponent) 
+
+// Al definir una HOC, como withMousePosition, ¿por qué la parte with del nombre de la HOC es una convención general recomendada por React
+// Una convencion de HOC seria añadir la palabra with al inicio del nombre del HOC
