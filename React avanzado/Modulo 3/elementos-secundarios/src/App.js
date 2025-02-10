@@ -96,6 +96,13 @@ function App() {
         <PanelCoordenadas/>
         <PuntoCoordenadas/>
       </>
+      <hr/>
+
+      <div>
+        <a href='https://www.datos.gov.co/'>
+          Link para datos abiertos
+        </a>
+      </div>
     </div>
   );
 }
