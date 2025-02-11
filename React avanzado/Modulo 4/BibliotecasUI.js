@@ -39,3 +39,25 @@
 // Tambien tenemos otros componentes externos como Formik y Yup la primera para crear formularios en React, tareas repetitivas de gestión del estado del formulario, validación y envío, para que pueda centrarse en la lógica de negocio 
 
 // Y yup sirve para validar datos del formulario antes de enviarlos al servidor 
+
+// Tambien se habla de que cada biblioteca de UI tiene unenfoque, no todas tienen el mismo fin por decirlo asi:
+// 1. Frameworks de UI con Componentes Predefinidos:
+// Estas nos traen componentes predefinidos listos para usar, como botones, cajas, menus, formularios, etc... Son ampliamente utilizados en proyectos prototipos donde no importa si la UI se ve generica
+// Ejemplos:
+// - Bootstrap (CSS + JS para UI)
+// - Material UI (para React, basado en las guías de Google Material Design)
+// - Ant Design (orientado a dashboards y apps empresariales)
+
+// 2. Bibliotecas de Utilidades CSS (Utility-First CSS):
+// Aca no se tienen componentes listos, unicamente clases CSS que nos ayudan a construirlos desde 0 segun como lo queramos hacer, estos se usan cuando se quiere personalizacion total y control sobre los diseños:
+// Ejemplos:
+// - Tailwind CSS (se diseña cada componente con clases como flex, p-4, bg-gray-500, etc.)   
+// - WindiCSS (similar a Tailwind pero más rápido)
+
+// 3. Bibliotecas Híbridas (Componentes + Utilidades):
+// Se combinan componentes prediseñados con varias utilidades CSS para personalizar mas facil sobre un prototipo, son altamente usados cuando se quiere buscar un quilibrio en personalizacion y velocidad
+// Ejemplos:
+// - Chakra UI (tiene componentes listos, pero puedes personalizar con utilidades)
+// - ShadCN/UI (para React, basado en Tailwind, muy flexible)
+
+    
