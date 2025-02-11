@@ -7,9 +7,9 @@ import { Boton, BotonLoging } from './components/Spread';
 import { RedCard, BlueCard } from './components/Hoc';
 import { RastreadorPanelMouse, RastreadorPuntoMouse } from './rastreadorMouse/MouseCoordenadasHoc';
 import { PanelCoordenadas, PuntoCoordenadas } from './rastreadorMouse/MouseCoordenadasRender';
+import FormularioCalificacion from './components/FormularioCalificacion';
 
 function App() {
-
   const [selected, setSelected] = useState("");
 
   return (
@@ -103,6 +103,10 @@ function App() {
           Link para datos abiertos
         </a>
       </div>
+
+      <>
+        <FormularioCalificacion/>
+      </>
     </div>
   );
 }
