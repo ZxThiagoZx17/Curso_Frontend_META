@@ -13,5 +13,16 @@
 
 // React testing library nos permite probar componentes simulando las iteracciones del usuario sin necesidad de dar detalles de la implementacion del componente (Este usa JEST internamente)
 
-// Hacemos una prueba con React testing library en nuestro proyecto con la etiqueta <a href='https://www.datos.gov.co/'/>
+// Jest → Para testear lógica de negocio y funciones puras.
+// React Testing Library → Para testear UI, renderizado y eventos del usuario.
 
+// Hacemos una prueba con React testing library en nuestro proyecto el ComponenteTest'/>
+
+// Dejamos varios conceptos claves alla y aca:
+// 1️. test() → Función de Jest donde definimos la prueba.
+// 2️. render() → Renderiza el componente en un entorno de prueba.
+// 3️. jest.fn() → Crea una función simulada para eventos.
+// 4️. screen.getByText() / getByRole() / getByTestId() → Buscan elementos en el DOM.
+// 5️. fireEvent / userEvent → Simulan eventos como clics o cambios.
+// 6️. expect() → Define lo que esperamos que pase.
+// 7️. npm test → Ejecuta todos los tests.
