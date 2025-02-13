@@ -4,13 +4,14 @@ import {
     AlertDialogContent,
     AlertDialogHeader,
     AlertDialogOverlay,
-  } from "@chakra-ui/react";
+  } from "@chakra-ui/modal";
+  
   import { useAlertContext } from "../context/AlertContext";
   import { useRef } from "react";
   
   function Alert() {
     const { isOpen, type, message, onClose } = useAlertContext();
-    const cancelRef = useRef<HTMLButtonElement>(null);
+    const cancelRef = useRef<HTMLButtonElement>(undefined);
     const isSuccess:boolean = type === "success"
   
     return (
