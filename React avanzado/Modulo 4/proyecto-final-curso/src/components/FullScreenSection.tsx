@@ -13,14 +13,14 @@ const FullScreenSection: React.FC<FullScreenSectionProps> = ({
 }) => {
 
     // Extraemos 'direction' para que no se pase a VStack ya que es incopatible
-    const { direction, ...filteredBoxProps } = boxProps;
+    // const {direction, ...filteredBoxProps } = boxProps;
 
   return (
     <VStack
       backgroundColor={boxProps.backgroundColor}
       color={isDarkBackground ? "white" : "black"}
     >
-      <VStack maxWidth="1280px" minHeight="100vh" {...filteredBoxProps}>
+      <VStack maxWidth="100%" minHeight="100vh" {...boxProps}>
         {children}
       </VStack>
     </VStack>

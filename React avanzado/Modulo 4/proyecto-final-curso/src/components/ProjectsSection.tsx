@@ -67,7 +67,7 @@ const ProjectsSection = () => {
                 // imageSrc={project.getImageSrc()} //Haciendo esto lo que hacemos es ejecutar getImageSrc() en cada render
             />
           );
-        })};
+        })}
 
       </Box>
     </FullScreenSection>
