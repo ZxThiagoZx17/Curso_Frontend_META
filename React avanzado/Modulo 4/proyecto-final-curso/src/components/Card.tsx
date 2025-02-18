@@ -9,11 +9,10 @@ interface CardProps {
   imageSrc: string;
 }
 
-const Card:React.FC<CardProps> = ({ title, description, imageSrc }) => {
-
-  return(
-    <div >
-      <Image src={imageSrc}/>
+const Card: React.FC<CardProps> = ({ title, description, imageSrc }) => {
+  return (
+    <div>
+      <Image src={imageSrc} />
       <Heading>{title}</Heading>
       <Text>{description}</Text>
       <div>
@@ -21,6 +20,7 @@ const Card:React.FC<CardProps> = ({ title, description, imageSrc }) => {
         <FontAwesomeIcon icon={faArrowRight} size="1x" />
       </div>
     </div>
-  )};
+  );
+};
 
 export default Card;

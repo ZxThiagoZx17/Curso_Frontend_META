@@ -7,14 +7,13 @@ interface FullScreenSectionProps extends BoxProps {
   isDarkBackground?: boolean; // Opcional con ?, significa que la prop puede estar presente o no
 }
 
-const FullScreenSection: React.FC<FullScreenSectionProps> = ({ 
-  children, 
+const FullScreenSection: React.FC<FullScreenSectionProps> = ({
+  children,
   isDarkBackground = false, // Valor por defecto
   ...boxProps //Se puede explicar como "todo lo que no sea children o isDarkBackground, agrégalo aquí".
 }) => {
-
-    // Extraemos 'direction' para que no se pase a VStack ya que es incopatible
-    // const {direction, ...filteredBoxProps } = boxProps;
+  // Extraemos 'direction' para que no se pase a VStack ya que es incopatible
+  // const {direction, ...filteredBoxProps } = boxProps;
 
   return (
     <VStack

@@ -47,7 +47,8 @@ const redesSociales: SocialLink[] = [
 ];
 
 // Tipamos la función handleClick correctamente
-const Header: React.FC = () => { //Si el componente no tiene props no es necesario tiparlo, pero se puede hacer, añadira implicitamente children como prop
+const Header: React.FC = () => {
+  //Si el componente no tiene props no es necesario tiparlo, pero se puede hacer, añadira implicitamente children como prop
 
   // Funcion que da el efecto de animacion al pasar el cursor por encima
   const handleClick = (anchor: string) => () => {
@@ -74,16 +75,22 @@ const Header: React.FC = () => { //Si el componente no tiene props no es necesar
       backgroundColor="#18181c"
     >
       <Box color="white" maxWidth="1280px" margin="0 auto">
-        <HStack px={16} py={4} justifyContent="space-between" alignItems="center">
+        <HStack
+          px={16}
+          py={4}
+          justifyContent="space-between"
+          alignItems="center"
+        >
           <nav>
             {/* Agregamos los enlaces de redes sociales con el tipado correcto */}
             <HStack gap={`${8}`}>
               {redesSociales.map(({ icon, url }) => (
-                <a key={url} 
-                   href={url}
-                   target="_blank" 
-                   rel="noopener noreferrer">
-
+                <a
+                  key={url}
+                  href={url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <FontAwesomeIcon icon={icon} size="2x" />
                 </a>
               ))}
@@ -92,10 +99,18 @@ const Header: React.FC = () => { //Si el componente no tiene props no es necesar
           <nav>
             <HStack gap="8">
               {/* Enlaces a Projects y Contact Me con eventos de click tipados */}
-              <a id="projects-section" onClick={handleClick("projects")} href="/#projects">
+              <a
+                id="project-section"
+                onClick={handleClick("projects")}
+                href="/#projects"
+              >
                 Projects
               </a>
-              <a id="contactme-section" onClick={handleClick("contactme")} href="/#contact-me">
+              <a
+                id="contact-section"
+                onClick={handleClick("contactme")}
+                href="/#contact-me"
+              >
                 Contact Me
               </a>
             </HStack>
@@ -107,4 +122,3 @@ const Header: React.FC = () => { //Si el componente no tiene props no es necesar
 };
 
 export default Header;
-

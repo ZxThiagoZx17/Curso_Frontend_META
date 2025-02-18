@@ -12,14 +12,16 @@ import {
 
 import { Select } from "@chakra-ui/select";
 
-import{  FormControl,
-    FormErrorMessage,
-    FormLabel,
+import {
+  FormControl,
+  FormErrorMessage,
+  FormLabel,
 } from "@chakra-ui/form-control";
 
 import FullScreenSection from "./FullScreenSection";
 import useSubmit from "../hooks/useSubmit";
 import { useAlertContext } from "../context/AlertContext";
+
 // Definimos la interfaz para los valores del formulario
 interface FormValues {
   firstName: string;
@@ -49,13 +51,21 @@ const LandingSection: React.FC = () => {
         .required("Message is required"),
     }),
     onSubmit: async (values) => {
-      await submit("/api/submit", values);
-      onOpen(response?.type || "error", response?.message || "Submission failed");
+      await submit(values);
+      onOpen(
+        response?.type || "error",
+        response?.message || "Submission failed"
+      );
     },
   });
 
   return (
-    <FullScreenSection isDarkBackground backgroundColor="#512DA8" py={16} gap={8}>
+    <FullScreenSection
+      isDarkBackground
+      backgroundColor="#512DA8"
+      py={16}
+      gap={8}
+    >
       <VStack w="1024px" p={32} alignItems="flex-start">
         <Heading as="h1" id="contactme-section">
           Contact me
@@ -63,15 +73,25 @@ const LandingSection: React.FC = () => {
         <Box p={6} rounded="md" w="100%">
           <form onSubmit={formik.handleSubmit}>
             <VStack gap={4}>
-              <FormControl isInvalid={formik.touched.firstName && !!formik.errors.firstName}>
+              <FormControl
+                isInvalid={
+                  formik.touched.firstName && !!formik.errors.firstName
+                }
+              >
                 <FormLabel htmlFor="firstName">Name</FormLabel>
                 <Input id="firstName" {...formik.getFieldProps("firstName")} />
                 <FormErrorMessage>{formik.errors.firstName}</FormErrorMessage>
               </FormControl>
 
-              <FormControl isInvalid={formik.touched.email && !!formik.errors.email}>
+              <FormControl
+                isInvalid={formik.touched.email && !!formik.errors.email}
+              >
                 <FormLabel htmlFor="email">Email Address</FormLabel>
-                <Input id="email" type="email" {...formik.getFieldProps("email")} />
+                <Input
+                  id="email"
+                  type="email"
+                  {...formik.getFieldProps("email")}
+                />
                 <FormErrorMessage>{formik.errors.email}</FormErrorMessage>
               </FormControl>
 
@@ -79,18 +99,31 @@ const LandingSection: React.FC = () => {
                 <FormLabel htmlFor="type">Type of enquiry</FormLabel>
                 <Select id="type" {...formik.getFieldProps("type")}>
                   <option value="hireMe">Freelance project proposal</option>
-                  <option value="openSource">Open source consultancy session</option>
+                  <option value="openSource">
+                    Open source consultancy session
+                  </option>
                   <option value="other">Other</option>
                 </Select>
               </FormControl>
 
-              <FormControl isInvalid={formik.touched.comment && !!formik.errors.comment}>
+              <FormControl
+                isInvalid={formik.touched.comment && !!formik.errors.comment}
+              >
                 <FormLabel htmlFor="comment">Your message</FormLabel>
-                <Textarea id="comment" height={250} {...formik.getFieldProps("comment")} />
+                <Textarea
+                  id="comment"
+                  height={250}
+                  {...formik.getFieldProps("comment")}
+                />
                 <FormErrorMessage>{formik.errors.comment}</FormErrorMessage>
               </FormControl>
 
-              <Button type="submit" colorScheme="purple" width="full" loading={isLoading}>
+              <Button
+                type="submit"
+                colorScheme="purple"
+                width="full"
+                isLoading={isLoading}
+              >
                 Submit
               </Button>
             </VStack>

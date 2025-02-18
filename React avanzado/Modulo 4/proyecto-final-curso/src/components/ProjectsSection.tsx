@@ -7,17 +7,17 @@ import photo3 from "../images/photo3.jpg";
 import photo4 from "../images/photo4.jpg";
 
 interface typeProjects {
-    title: string;
-    description: string;
-    getImageSrc: string; // Podriamos poner Function a secas pero aca especificamos que es una funcion que devuelve un string que es la ruta de la imagen
-};
+  title: string;
+  description: string;
+  getImageSrc: string; // Podriamos poner Function a secas pero aca especificamos que es una funcion que devuelve un string que es la ruta de la imagen
+}
 
 const projects: typeProjects[] = [
   {
     title: "React Space",
     description:
       "Handy tool belt to create amazing AR components in a React app, with redux integration via middleware",
-    getImageSrc: photo1,// () => require("../images/photo1.jpg"), Require puede dar problemas con TypeScript
+    getImageSrc: photo1, // () => require("../images/photo1.jpg"), Require puede dar problemas con TypeScript
   },
   {
     title: "React Infinite Scroll",
@@ -46,29 +46,28 @@ const ProjectsSection = () => {
       isDarkBackground //Cuando se define asi sin nada, implicitamente es True
       p={8}
       alignItems="flex-start"
-      gap={'8'}
+      gap={"8"}
     >
       <Heading as="h1" id="projects-section">
         Featured Projects
       </Heading>
       <Box
         display="grid"
-        gridTemplateColumns="repeat(2,minmax(0,1fr))"// Crea dos columnas en la grilla,  Cada columna tendrá un ancho mínimo de 0px y un máximo de 1fr (una fracción del espacio disponible).
+        gridTemplateColumns="repeat(2,minmax(0,1fr))" // Crea dos columnas en la grilla,  Cada columna tendrá un ancho mínimo de 0px y un máximo de 1fr (una fracción del espacio disponible).
         gridGap={8}
       >
         {projects.map((project) => {
           // const imageSrc = project.getImageSrc(); //Mejor llamar la funcion antes
-          return (          
+          return (
             <Card
-                key={project.title}
-                title={project.title}
-                description={project.description}
-                imageSrc={project.getImageSrc}
-                // imageSrc={project.getImageSrc()} //Haciendo esto lo que hacemos es ejecutar getImageSrc() en cada render
+              key={project.title}
+              title={project.title}
+              description={project.description}
+              imageSrc={project.getImageSrc}
+              // imageSrc={project.getImageSrc()} //Haciendo esto lo que hacemos es ejecutar getImageSrc() en cada render
             />
           );
         })}
-
       </Box>
     </FullScreenSection>
   );
