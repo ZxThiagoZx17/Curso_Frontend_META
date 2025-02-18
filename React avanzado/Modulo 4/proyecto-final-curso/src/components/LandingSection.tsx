@@ -6,13 +6,11 @@ const greeting:string = "Hello, I am Pete!";
 const bio1:string = "A frontend developer";
 const bio2:string = "specialised in React";
 
-// Implement the UI for the LandingSection component according to the instructions.
-// Use a combination of Avatar, Heading and VStack components.
 const LandingSection = () => (
-  <FullScreenSection
+  <FullScreenSection //Usa el componente FullScreenSection
     justifyContent="center"
     alignItems="center"
-    isDarkBackground
+    isDarkBackground //Cuando se define asi sin nada, implicitamente es True
     backgroundColor="#2A4365"
   >
     <VStack gap={16}>

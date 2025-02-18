@@ -47,7 +47,9 @@ const redesSociales: SocialLink[] = [
 ];
 
 // Tipamos la función handleClick correctamente
-const Header: React.FC = () => {
+const Header: React.FC = () => { //Si el componente no tiene props no es necesario tiparlo, pero se puede hacer, añadira implicitamente children como prop
+
+  // Funcion que da el efecto de animacion al pasar el cursor por encima
   const handleClick = (anchor: string) => () => {
     const id = `${anchor}-section`;
     const element = document.getElementById(id);
@@ -77,7 +79,11 @@ const Header: React.FC = () => {
             {/* Agregamos los enlaces de redes sociales con el tipado correcto */}
             <HStack gap={`${8}`}>
               {redesSociales.map(({ icon, url }) => (
-                <a key={url} href={url} target="_blank" rel="noopener noreferrer">
+                <a key={url} 
+                   href={url}
+                   target="_blank" 
+                   rel="noopener noreferrer">
+
                   <FontAwesomeIcon icon={icon} size="2x" />
                 </a>
               ))}
