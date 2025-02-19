@@ -1,0 +1,32 @@
+UI(User interface):
+Es lo que ven los usuarios, como tipo de letra, botones de color, formas iconos e imagenes
+Un buen diseño UI tiene que ver con agrupar todos estos elementos de manera que ayude a los usuarios a llegar a lo que buscan mas rapidamente mientras se ve lindo y se resalta la marca
+
+Buscara flujos interativos, unicamente se centrara en la parte estetica, accesibilidad, etc...
+
+Basicamente la GUI es la conexion del ser humano a los sistemas informaticos y bases de datos, hay herramientas en desarrollo web que nos ayudan mucho en el campo de UI como Figma
+
+UX(User Experience):
+No solo se limita a la parte grafica, se enfoca enla experiencia del usuario como tal, en base a como se sintio antes, durante y despues de tomar un producto/servicio en un restaurante seria por ejemplo, el personal, el servicio, la comida, la decoracion, el diseño del menu, etc...
+
+Se trata de hacernos las preguntas: ¿Cuales son las necesidades de los clientes? ¿Que les impide alcanzar sus metas? ¿Que tan intuitivo es el sitio web? ¿Es facil usarlo? ¿Eficiente?
+
+En caso de ser un producto ¿Como se usa?, ¿Que mas funciones trae?, ¿Como venia empacado?
+
+Se centraria en hacer una investigacion de esto, vendria a ser el contenido como tal, las palabras y el tono con el que vende su producto, ponerse en los zapatos del usuario
+
+iria por fases:
+1. Observar caso
+2. Identificar problemas
+3. Generar ideas
+4. Hacer prototipo de la solucion
+5. Testear solucion
+
+Midiendo la usabilidad:
+1. Capacidad de aprender: Proceso facil de aprender desde el principio
+2. Eficiencia: Poder reversar tareas, hacer cambios rapidamente
+3. Memorabilidad: Recordar rapidamente en donde iba despues de una distraccion
+4. Errores: Si el usuario comete un error que pasa
+5. Satisfaccion: fue agradable visitar ese sitio??
+
+Hay herramientas para compilar, organizar y mostrar la informacion durante el proceso de UX Que reunen informacion basica de un tipo de cliente como edad, genero, ocupacion, necesidades y objetivos
